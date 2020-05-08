@@ -18,7 +18,7 @@ class TweetMiner(object):
             
             if last_tweet_id:
                 statuses   =   self.api.GetUserTimeline(screen_name=user, count=self.result_limit, max_id=last_tweet_id - 1, include_rts=mine_retweets)
-                statuses = [ _.AsDict() for _ in statuses]
+                statuses = [_.AsDict() for _ in statuses]
             else:
                 statuses   =   self.api.GetUserTimeline(screen_name=user, count=self.result_limit, include_rts=mine_retweets)
                 statuses = [_.AsDict() for _ in statuses]
