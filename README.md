@@ -1,2 +1,2 @@
-# twitter_ml_project
+# Twitter Machine Learning Project
  
